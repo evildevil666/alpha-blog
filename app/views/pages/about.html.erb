@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>My new home page</title>
+<style>
+    .col-1-2 {
+        width: 50%;
+    }
+    .full-width {
+        width: 100%;
+    }
+    .section-content {
+        border-bottom: 2px solid #000;
+    }
+    .section-content:first-child {
+        border-right: 2px solid #000;
+    }
+    .section-wrap {
+        border-bottom: 2px solid #000;
+    }
+</style>
+</head>
+<body>
+<%= link_to image_tag('banner.jpg'), root_path %>
+<h1>This is About page</h1>
+<%= link_to 'Home', root_path %>
+<table class='full-width'>
+    <tbody>
+        <tr class='section-wrap'>
+            <td class='col-1-2 section-content'>This is section 1</td>
+            <td class='col-1-2 section-content'>This is section 2</td>
+        </tr>
+        <div>
+        <h4>TODO list</h4>
+        <ul>
+          <li>Read Ruby</li>
+          <li>Read Rails</li>
+          <li>Read HTML</li>
+          <li>Read CSS</li>
+        </ul>
+        </div>
+    </tbody>
+</table> 
+<p>Lorem ipsum dolar</p>
+</body>
+</html>
